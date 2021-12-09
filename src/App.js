@@ -1,3 +1,5 @@
+import s from './App.module.css';
+
 import Profile from './components/social-profile/Profile';
 import user from './components/social-profile/user.json';
 
@@ -12,7 +14,7 @@ import transactions from './components/transaction-history/transactions.json';
 
 export default function App() {
   return (
-    <div>
+    <div className={s.container}>
       <Profile
         username={user.username}
         tag={user.tag}
